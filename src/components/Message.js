@@ -13,7 +13,7 @@ const randomTime = () => {
 
 const Message = ({username, uri, count, onPress}) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       {count > 0 ? (
         <LinearGradient
           colors={['#f26a50', '#f20045', '#f20045']}
@@ -21,12 +21,13 @@ const Message = ({username, uri, count, onPress}) => {
           <Text style={styles.count}>{count}</Text>
         </LinearGradient>
       ) : null}
+
       <Image source={{uri: uri}} style={styles.image} />
       <View style={{marginLeft: 10}}>
         <Text style={styles.username}>{username}</Text>
         <Text style={styles.text}>Hello, How are you</Text>
       </View>
-      <Text style={styles.duration}>{randomTime}</Text>
+      <Text style={styles.duration}>{randomTime()}</Text>
     </TouchableOpacity>
   )
 }

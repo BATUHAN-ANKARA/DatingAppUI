@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 
-const LastWatch = () => {
+const LastWatch = ({checkedOn}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{checkedOn}</Text>
