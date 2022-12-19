@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 30,
   },
-  username: {
+  text: {
     color: '#b6b6b6',
     fontSize: 11,
   },
@@ -67,5 +67,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 280,
     position: 'absolute',
+  },
+  username: {
+    color: '#000119',
   },
 })
